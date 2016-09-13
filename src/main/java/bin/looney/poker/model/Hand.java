@@ -22,7 +22,7 @@ import java.util.Arrays;
 import java.util.List;
 
 public class Hand {
-    private List<Card> cards;
+    private List<Card> cards = new ArrayList<>();
 
     public Hand(Card... cards) {
         setCards(cards);
@@ -40,7 +40,9 @@ public class Hand {
     }
 
     public void setCards(Card[] cards) {
-        this.cards = Arrays.asList(cards);
+        for (int i = 0; i < cards.length; i++) {
+            this.cards.add(cards[i]);
+        }
     }
 
     public void addCards(List<Card> cards) {
