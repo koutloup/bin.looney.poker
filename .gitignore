@@ -2,3 +2,5 @@
 PokerDAG.iml
 pom.xml
 target/
+out/
+*.iml
